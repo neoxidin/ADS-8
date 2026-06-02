@@ -64,7 +64,7 @@ class BST {
     }
 
     int depth(BSTNode<T>* node) const {
-        if (!node) return 0;
+        if (!node) return -1;
         return 1 + std::max(depth(node->left), depth(node->right));
     }
 
